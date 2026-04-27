@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+        }
+        header input{
+            border-radius: 25px;
+            border: none;
+            width: 70%;
+            background-color: lightgrey;
+            padding: 15px;
+        }
+        .left{
+             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .first_container{
+            background-color: lightgrey;
+            width: 100%;
+        }
+        .container{
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .text{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .boxes{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .boxxes{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: left;
+            padding-left: 100px;
+        }
+        .boxx{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .img_text{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        @media screen and (max-width:768px){
+            input{
+                display: none;
+            }
+            .first_container{
+                flex-direction: column;
+            }
+             .boxes{
+                flex-direction: column;
+            }
+            .boxxes{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: left;
+            padding-left: 100px;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+        <img src="images/menu_icon.png" alt="menu_icon" width="40px">
+        <img src="images/logo.png" alt="logo" width="130px">
+        </div>
+        <input type="search" placeholder="Search" class="search">
+        <img src="images/avatar.png" alt="avatar" width="200px">
+    </header>
+    <div class="first_container">
+        <div class="container">
+            <div class="text">
+                <h4 style="color: grey;">Create a form</h4>
+                <div class="text">
+                    <h4>Template gallery</h4>
+                    <img src="images/icon_1.png" alt="icon_1" width="30px">
+                </div>
+            </div>
+            <div class="boxes">
+            <div class="box">
+                <img src="images/image_7.png" alt="image_7" width="200px">
+                <span style="font-size: 15px;">Empty form</span>
+            </div>
+            <div class="box">
+                <img src="images/image_6.png" alt="image_7" width="200px">
+                <span style="font-size: 15px;">Questionnaire template</span>
+            </div>
+            <div class="box">
+                <img src="images/image_5.png" alt="image_7" width="200px">
+                <span style="font-size: 15px;">Testing</span>
+            </div>
+            <div class="box">
+                <img src="images/image_4.png" alt="image_7" width="200px">
+                <span style="font-size: 15px;">Worksheet</span>
+            </div>
+            <div class="box">
+                <img src="images/image_3.png" alt="image_7" width="200px">
+                <span style="font-size: 15px;">Course evaluation</span>
+            </div>
+            <div class="box">
+                <img src="images/image_2.png" alt="image_7" width="200px">
+                <span style="font-size: 15px;">Contact information</span>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="second_container">
+        <div class="jiaq">
+            <h3 style="color: grey;">Recent forms</h3>
+            <div class="trt">
+                <h3 style="color: grey;">Owner:anyone</h3>
+                <div class="icons">
+                    <img src="images/icon4.png">
+                    <img src="images/icon2.png">
+                    <img src="images/icon3.png">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="boxxes">
+            <div class="boxx">
+            <img src="images/image_2.png" alt="image_2" width="250px">
+            <div class="img_text">
+            <h4>New form</h4>
+            <div class="text">
+                <img src="images/mini+logo.png" alt="mini" width="40px">
+                <h6 style="color: gray;">March 26 , 2026</h6>
+                <img src="images/icon_1.png" alt="" style="width: 20px;">
+            </div>
+            </div>
+            </div>
+
+            <div class="boxx">
+            <img src="images/image_2.png" alt="image_2" width="250px">
+            <div class="img_text">
+            <h4>ŞARKI Yarışması</h4>
+            <div class="text">
+                <img src="images/mini+logo.png" alt="mini" width="40px">
+                <h6 style="color: gray;">March 11 , 2026</h6>
+                <img src="images/icon_1.png" alt="" style="width: 20px;">
+            </div>
+            </div>
+            </div>
+        </div>
+       </div>
+
+</body>
+</html>
